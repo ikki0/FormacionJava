@@ -1,0 +1,38 @@
+body {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    & input {
+        padding: 4px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 15rem;
+
+        & :in-range {
+            border: 2px solid green;
+        }
+
+        & :out-of-range {
+            border: 2px solid red;
+        }
+    }
+
+    & button {
+        width: 8rem;
+        padding: 1rem;
+    }
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
