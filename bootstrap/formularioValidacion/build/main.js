@@ -6,7 +6,7 @@ const iLastName = document.querySelector('#validate-last-name');
 const iUserName = document.querySelector('#validate-user-name');
 const iCity = document.querySelector('#validate-city');
 const iState = document.querySelector('#validate-state');
-const iCheckBox = document.querySelector('#validate-check-box');
+const iCheckBox = document.querySelector('#validate-checkbox');
 function checkName() {
     if (iName?.value) {
         iName.classList.add('is-valid');
@@ -55,6 +55,16 @@ function checkState() {
     else {
         iCity?.classList.add('is-invalid');
         iCity?.classList.remove('is-valid');
+    }
+}
+function checkCheckbox() {
+    if (iCheckBox?.checked) {
+        iCheckBox.classList.add('is-valid');
+        iCheckBox.classList.remove('is-invalid');
+    }
+    else {
+        iCheckBox?.classList.add('is-invalid');
+        iCheckBox?.classList.remove('is-valid');
     }
 }
 function beforeSubmit(event) {

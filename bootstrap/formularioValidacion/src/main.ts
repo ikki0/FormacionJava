@@ -5,7 +5,7 @@ const iLastName : HTMLInputElement| null = document.querySelector('#validate-las
 const iUserName : HTMLInputElement | null = document.querySelector('#validate-user-name');
 const iCity : HTMLInputElement | null = document.querySelector('#validate-city');
 const iState : HTMLInputElement | null = document.querySelector('#validate-state');
-const iCheckBox: HTMLInputElement | null = document.querySelector('#validate-check-box');
+const iCheckBox: HTMLInputElement | null = document.querySelector('#validate-checkbox');
 
 function checkName(): void {
     if (iName?.value) {
@@ -56,6 +56,16 @@ function checkState(): void {
     }else {
         iCity?.classList.add('is-invalid')
         iCity?.classList.remove('is-valid')
+    }
+}
+
+function checkCheckbox(): void {
+    if (iCheckBox?.checked) {
+        iCheckBox.classList.add('is-valid')
+        iCheckBox.classList.remove('is-invalid');
+    }else {
+        iCheckBox?.classList.add('is-invalid')
+        iCheckBox?.classList.remove('is-valid')
     }
 }
 
