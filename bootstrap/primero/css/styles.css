@@ -1,0 +1,15 @@
+.container-orange {
+    background-color: orange !important;
+}
+
+@media (max-width: 826px) {
+    .container-orange {
+        background-color: violet !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-orange {
+        background-color: green !important;
+    }
+}

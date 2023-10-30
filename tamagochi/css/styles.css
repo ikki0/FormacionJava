@@ -1,0 +1,199 @@
+:root {
+    --percentageEat: 60%;
+    --percentageTraining: 50%;
+    --percentageSupplementation: 40%;
+    --percentageSleep: 80%;
+    --percentageAvatar: 58%;
+    --bgGreen: rgb(21, 221, 21);
+    --bgEat: rgb(21, 221, 21);
+    --bgTraining: rgb(21, 221, 21);
+    --bgSupplementation: orange;
+    --bgSleep: rgb(21, 221, 21);
+    --bgAvatar: rgb(21, 221, 21);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.03rem;
+}
+
+body {
+    height: 100vh;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    outline: 2px solid orange;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.icon-img {
+    width: 40px;
+    height: 40px;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.s-eat {
+    background-color: rgb(111, 240, 111);
+}
+
+.s-training {
+    background-color: rgb(240, 240, 100);
+}
+
+.s-supplementation {
+    background-color: rgb(220, 122, 250);
+    justify-content: end;
+}
+
+.s-sleep {
+    background-color: rgb(71, 207, 248);
+    justify-content: end;
+}
+
+.avatar-container {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    row-gap: 1rem;
+    position: relative;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.icons-training {
+    justify-content: end;
+}
+
+.icons-sleep {
+    justify-content: end;
+}
+
+.progress-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.d-black {
+    background: #000;
+    width: 100%;
+    height: 1.8rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.d-progress {
+    height: 1rem;
+    border-radius: 15px;
+}
+
+.progress-eat {
+    background: var(--bgEat);
+    width: var(--percentageEat);
+    transition: 0.5s ease-in-out;
+}
+
+.progress-training {
+    background: var(--bgTraining);
+    width: var(--percentageTraining);
+    transition: 0.5s ease-in-out;
+}
+
+.progress-supplementation {
+    background-color: var(--bgSupplementation);
+    width: var(--percentageSupplementation);
+    transition: 0.5s ease-in-out;
+}
+
+.progress-sleep {
+    background: var(--bgSleep);
+    width: var(--percentageSleep);
+    transition: 0.5s ease-in-out;
+}
+
+.progress-avatar {
+    background: var(--bgAvatar);
+    width: var(--percentageAvatar);
+    transition: 0.5s ease-in-out;
+}
+
+.header {
+    font-size: 1.3rem;
+    position: absolute;
+}
+
+.header-eat {
+    bottom: 16%;
+    left: 16%;
+    color: rgb(3, 150, 3);
+}
+
+.header-training {
+    bottom: 16%;
+    right: 16%;
+    color: rgb(168, 168, 0);
+}
+
+.header-supplementation {
+    top: 16%;
+    left: 16%;
+    color: purple;
+}
+
+.header-sleep {
+    top: 16%;
+    right: 16%;
+    color: rgb(60, 138, 255);
+}
+
+.percentage {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+}
+
+.progress-avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script type="module" defer src="./build/interface/Categories.js"></script> -->
+    <script defer src="./build/src/main.js" type="module"></script>
+    <title>Proyecto Chuck Norris</title>
+</head>
+
+<body>
+    <h1>Chuck Norris Says...</h1>
+    <div class="cards">
+        <div class="card card-1 nes-container is-rounded">
+            <div class="card-wrap card-wrap-1">
+                <picture>
+                    <img class='imgChuck' src="./img/chuckNorris.gif" alt="img of chuck norris">
+                </picture>
+
+                <div class="phrases-wrap  nes-container is-rounded is-dark">
+                    <p class="randomPhrases">Good morning. Thou hast had a good night's sleep, I hope.</p>
+                </div>
+            </div>
+            <button type="button" class="btn-random nes-btn">Next</button>
+        </div>
+
+
+        <div class="card card-2  nes-container is-rounded">
+            <div class="card-wrap card-wrap-2">
+                <picture>
+                    <img class='imgChuck' src="./img/chuckNorris.gif" alt="img of chuck norris">
+                </picture>
+
+                <div class="find-category-wrap">
+                    <label for="default_select">Find Category</label>
+                    <div class="nes-select">
+                        <select required id="default_select">
+                            <option value="" disabled selected hidden>Select...</option>
+                        </select>
+                    </div>
+
+                    <div class="phrases-wrap nes-container is-rounded is-dark">
+                        <p class="category-phrases"></p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-category nes-btn">Search</button>
+        </div>
+
+        <div class="card card-3  nes-container is-rounded">
+            <div class="card-wrap card-wrap-2">
+                <picture>
+                    <img class='imgChuck' src="./img/chuckNorris.gif" alt="img of chuck norris">
+                </picture>
+
+                <div class="find-category-wrap">
+                    <div class="nes-field">
+                        <label for="name_field">Find Text</label>
+                        <input type="text" id="name_field" class="nes-input" placeholder="write text">
+                    </div>
+
+
+                    <div class="phrases-wrap nes-container is-rounded is-dark">
+                        <p class="find-text"></p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-find-text nes-btn">Search</button>
+        </div>
+    </div>
+</body>
+
+</html>

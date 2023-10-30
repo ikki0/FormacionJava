@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formaulario</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulario envío de datos</h1>
+    </header>
+    <main>
+      <form action="https://formsubmit.co/arojas1297@gmail.com" method="POST" />
+      <label for="phone">Introduzca su nº de teléfono</label>
+      <br />
+      <input type="text" id="phone" name="phone" pattern="^\d{9}" required />
+      <br />
+      <label for="message">Introduzca su mensaje</label>
+      <br />
+      <input type="text" name="message" id="message" required />
+      <br />
+      <button type="submit">Envíar</button>
+    </main>
+  </body>
+</html>

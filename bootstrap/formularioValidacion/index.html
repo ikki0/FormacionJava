@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script> -->
+    <script defer src="./build/main.js"></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Formulario</h1>
+        <form class="form">
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationServer01">First name</label>
+                    <input type="text" class="form-control" id="validate-first-name" placeholder="First name">
+                    <div class="valid-feedback">
+                        Parece Correcto
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="validationServer02">Last name</label>
+                    <input type="text" class="form-control" id="validate-last-name" placeholder="Last name">
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationServerUsername">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        </div>
+                        <input type="text" class="form-control " id="validate-user-name" placeholder="Username"
+                            aria-describedby="inputGroupPrepend3">
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationServer03">City</label>
+                    <input type="text" class="form-control " id="validate-city" placeholder="City">
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationServer04">State</label>
+                    <input type="text" class="form-control " id="validate-state placeholder=" State">
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input " type="checkbox" value="" id="validate-checkbox">
+                    <label class="form-check-label" for="invalidCheck3">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <button class="btn-submit btn btn-primary" type="submit">Submit form</button>
+        </form>
+    </div>
+</body>
+
+</html>
